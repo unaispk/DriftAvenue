@@ -46,8 +46,8 @@ export default function FeaturedProducts({ products, onAddToCart, onWishlistTogg
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div className="max-w-md">
-            <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2 font-cinzel">CURATED SELECTION</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight font-cinzel">
+            <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2 font-bebas">CURATED SELECTION</p>
+            <h2 className="text-3xl sm:text-4xl font-bebas  font-extrabold text-white tracking-tight leading-tight ">
               HOTTEST DROPS
             </h2>
             <p className="text-zinc-400 text-sm mt-2 font-medium">

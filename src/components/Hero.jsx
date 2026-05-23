@@ -12,9 +12,9 @@ export default function Hero() {
           className="w-full h-full object-cover object-center scale-105 animate-fade-in"
         />
         {/* Sleek radial and linear gradient overlay for high contrast text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-transparent md:block hidden"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent md:block hidden"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/75 to-black/30"></div>
-        
+
         {/* Subtle decorative pulsing gold grid glow in corner */}
         <div className="absolute top-1/4 right-1/4 w-[350px] h-[350px] bg-brand-primary/5 rounded-full blur-[100px] pointer-events-none animate-pulse"></div>
       </div>
@@ -22,25 +22,25 @@ export default function Hero() {
       {/* Hero Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12 md:py-24 flex flex-col justify-center min-h-[70vh]">
         <div className="max-w-2xl text-center md:text-left flex flex-col items-center md:items-start animate-fade-up">
-          
+
           {/* Tagline Pill */}
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-black uppercase tracking-widest mb-6">
             <Sparkles size={12} className="animate-spin-slow" />
-            <span>EST. 2025 / LUXURY UTILITY DROP</span>
+            <span>DRIFTAVANEW • EST. 2025</span>
           </div>
 
           {/* Heading */}
-          <h1 className="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-widest leading-tight mb-6">
-            HIGH-OCTANE <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-[#F5EFE4] to-brand-primary bg-size-200 glow-text italic font-garamond font-normal tracking-normal capitalize pl-1">
-              Streetwear
-            </span>
-          </h1>
+         <h1 className="font-bebas text-4xl sm:text-5xl lg:text-6xl font-semibold text-white tracking-[0.03em] leading-[1] mb-4">
+  DRIFT DIFFERENT
+  <br />
+  <span className="block mt-2 font-bebas  text-xl sm:text-2xl lg:text-3xl font-normal text-brand-primary tracking-normal">
+    Luxury Meets Street Culture
+  </span>
+</h1>
 
           {/* Subtext */}
-          <p className="text-zinc-300 text-sm sm:text-base lg:text-lg font-medium tracking-wide max-w-lg mb-10 leading-relaxed">
-            Engineered for speed, tailored for the avenue. High-contrast aesthetics meet premium utility designs. Limitless expression at 8000 RPM.
-          </p>
+          <p className="text-zinc-300 text-sm sm:text-base font-medium max-w-md leading-relaxed mb-8">
+            Elevated essentials, oversized silhouettes, and premium craftsmanship. Built for everyday confidence and effortless expression          </p>
 
           {/* Actions */}
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
@@ -51,7 +51,7 @@ export default function Hero() {
               Shop the Drop
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            
+
             <a
               href="#categories"
               className="flex items-center justify-center bg-zinc-950/80 hover:bg-zinc-900 text-white font-extrabold uppercase text-xs tracking-wider px-8 py-4 rounded-lg border border-zinc-850 hover:border-zinc-700 w-full sm:w-auto transition-all duration-300 backdrop-blur-sm"
