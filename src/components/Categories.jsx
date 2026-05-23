@@ -5,7 +5,7 @@ export default function Categories() {
   const categoryList = [
     {
       id: 1,
-      title: 'Avenue Outerwear',
+      title: 'Avanew Outerwear',
       description: 'Heavyweight hoodies, zip jackets & sleek puffers.',
       count: '18 Products',
       image: '/images/product_jacket.png',
@@ -43,11 +43,11 @@ export default function Categories() {
         
         {/* Section Title */}
         <div className="max-w-md mb-12">
-          <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2">EXPLORE CATEGORIES</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+          <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2 font-cinzel">EXPLORE CATEGORIES</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight font-cinzel">
             SHOP BY COLLECTION
           </h2>
-          <p className="text-zinc-400 text-sm mt-2">
+          <p className="text-zinc-400 text-sm mt-2 font-medium">
             Select catalog pathways tailored to your style. Designed with performance and street culture aesthetics.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function Categories() {
               className={`relative overflow-hidden rounded-2xl border border-zinc-800/60 bg-[#0E0E12] group flex flex-col justify-between p-6 sm:p-8 min-h-[300px] sm:min-h-[340px] ${cat.span}`}
             >
               {/* Product Background silhouette - blurred & stylized */}
-              <div className="absolute right-0 bottom-0 w-2/3 h-2/3 sm:w-1/2 sm:h-1/2 opacity-30 group-hover:opacity-55 transition-opacity duration-500 pointer-events-none">
+              <div className="absolute right-0 bottom-0 w-2/3 h-2/3 sm:w-1/2 sm:h-1/2 opacity-25 group-hover:opacity-50 transition-opacity duration-500 pointer-events-none">
                 <img
                   src={cat.image}
                   alt=""
@@ -68,17 +68,17 @@ export default function Categories() {
                 />
               </div>
 
-              {/* Glowing gradient overlay on card hover */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/0 via-brand-primary/0 to-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+              {/* Glowing champagne gradient overlay on card hover */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/0 via-brand-primary/0 to-brand-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
               {/* Upper Section */}
               <div className="relative z-10 flex justify-between items-start">
-                <span className="bg-zinc-900 text-zinc-400 border border-zinc-800 text-[10px] font-black tracking-widest px-2.5 py-1 rounded">
+                <span className="bg-zinc-900 text-zinc-400 border border-zinc-800 text-[10px] font-black tracking-widest px-2.5 py-1 rounded font-cinzel">
                   {cat.count}
                 </span>
                 
                 <button
-                  className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 group-hover:text-white group-hover:border-brand-primary group-hover:bg-brand-primary group-hover:text-black transition-all transform group-hover:rotate-45"
+                  className="w-10 h-10 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 group-hover:text-black group-hover:border-brand-primary group-hover:bg-brand-primary transition-all transform group-hover:rotate-45 cursor-pointer"
                   aria-label={`Shop ${cat.title}`}
                 >
                   <ArrowUpRight size={18} />
@@ -87,13 +87,13 @@ export default function Categories() {
 
               {/* Lower Section */}
               <div className="relative z-10">
-                <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-brand-primary transition-colors mb-2">
+                <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-brand-primary transition-colors mb-2 font-cinzel">
                   {cat.title}
                 </h3>
                 <p className="text-zinc-400 text-sm max-w-sm font-medium leading-relaxed">
                   {cat.description}
                 </p>
-                <div className="mt-4 inline-flex items-center gap-1 text-xs font-black uppercase text-brand-primary tracking-widest opacity-0 group-hover:opacity-100 group-hover:translate-x-1.5 transition-all duration-300">
+                <div className="mt-4 inline-flex items-center gap-1 text-xs font-black uppercase text-brand-primary tracking-widest opacity-0 group-hover:opacity-100 group-hover:translate-x-1.5 transition-all duration-300 font-cinzel">
                   Shop Collection
                 </div>
               </div>

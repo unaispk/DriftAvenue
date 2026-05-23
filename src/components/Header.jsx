@@ -47,11 +47,16 @@ export default function Header({ cartCount, wishlistCount, onCartClick, onWishli
             </div>
 
             {/* Logo */}
-            <div className="flex-1 flex justify-center lg:justify-start lg:flex-none">
-              <a href="#" className="flex items-center gap-2 group">
-                <span className="w-2.5 h-6 bg-brand-primary rounded-sm transform -skew-x-12 group-hover:scale-y-110 transition-transform"></span>
-                <span className="font-extrabold text-2xl tracking-wider text-white">
-                  DRIFT<span className="text-brand-primary">AVENUE</span>
+            <div className="flex-grow-0">
+              <a href="#" className="flex items-center gap-2.5 group">
+                <svg className="w-8 h-8 text-brand-primary transform group-hover:scale-105 transition-transform duration-300" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M 28 28 L 52 28 C 72 28, 72 72, 52 72 L 28 72 Z" />
+                  <path d="M 46 72 L 62 28 L 78 72" />
+                  <path d="M 52 52 H 72" strokeWidth="2.5" />
+                  <path d="M 15 84 H 85" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
+                </svg>
+                <span className="font-cinzel text-xl sm:text-2xl font-black tracking-widest text-white select-none">
+                  DRIFT<span className="text-brand-primary">AVANEW</span>
                 </span>
               </a>
             </div>
@@ -134,10 +139,15 @@ export default function Header({ cartCount, wishlistCount, onCartClick, onWishli
         >
           <div>
             <div className="flex items-center justify-between mb-8">
-              <a href="#" className="flex items-center gap-2">
-                <span className="w-2 h-5 bg-brand-primary rounded-sm transform -skew-x-12"></span>
-                <span className="font-extrabold text-xl tracking-wider text-white">
-                  DRIFT<span className="text-brand-primary">AVENUE</span>
+              <a href="#" className="flex items-center gap-2.5 group">
+                <svg className="w-7 h-7 text-brand-primary" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M 28 28 L 52 28 C 72 28, 72 72, 52 72 L 28 72 Z" />
+                  <path d="M 46 72 L 62 28 L 78 72" />
+                  <path d="M 52 52 H 72" strokeWidth="2.5" />
+                  <path d="M 15 84 H 85" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
+                </svg>
+                <span className="font-cinzel text-lg font-black tracking-widest text-white select-none">
+                  DRIFT<span className="text-brand-primary">AVANEW</span>
                 </span>
               </a>
               <button

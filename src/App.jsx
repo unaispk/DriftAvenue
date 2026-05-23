@@ -5,10 +5,12 @@ import FeaturedProducts from './components/FeaturedProducts';
 import Categories from './components/Categories';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import { initialProducts } from './data/products';
 import { X, Trash2, Plus, Minus, ArrowRight, ShieldCheck, Truck, RefreshCw, ShoppingBag } from 'lucide-react';
 
 export default function App() {
   // Storefront states
+  const [products, setProducts] = useState(initialProducts);
   const [cart, setCart] = useState([]);
   const [wishlistCount, setWishlistCount] = useState(0);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -97,6 +99,7 @@ export default function App() {
       <main className="flex-grow">
         <Hero />
         <FeaturedProducts 
+          products={products}
           onAddToCart={handleAddToCart} 
           onWishlistToggle={handleWishlistToggle}
         />

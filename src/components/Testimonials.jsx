@@ -23,7 +23,7 @@ export default function Testimonials() {
       id: 3,
       name: 'Marcus T.',
       role: 'Industrial Designer',
-      text: 'DriftAvenue absolutely nailed the futuristic look. The translucent sneakers pop beautifully under neon lights, and the mesh comfort fits like a second skin.',
+      text: 'Drift Avanew absolutely nailed the futuristic look. The translucent sneakers pop beautifully under neon lights, and the mesh comfort fits like a second skin.',
       rating: 5,
       avatarColor: 'bg-brand-primary text-black'
     }
@@ -48,12 +48,12 @@ export default function Testimonials() {
         
         {/* Section Title */}
         <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2">COMMUNITY TRUST</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <p className="text-brand-primary text-xs font-black uppercase tracking-widest mb-2 font-cinzel">COMMUNITY TRUST</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-cinzel">
             TESTED BY THE CREW
           </h2>
-          <p className="text-zinc-400 text-sm mt-3 max-w-md">
-            Don't just take our word for it. Read what professional drifters, photographers, and creators say about DriftAvenue.
+          <p className="text-zinc-400 text-sm mt-3 max-w-md font-medium">
+            Don't just take our word for it. Read what professional drifters, photographers, and creators say about Drift Avanew.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
           <div className="relative glass-panel rounded-2xl p-8 sm:p-12 border border-zinc-800/80 shadow-2xl">
             
             {/* Quote Icon Background */}
-            <div className="absolute top-6 right-8 text-zinc-850/60 pointer-events-none">
+            <div className="absolute top-6 right-8 text-zinc-850/20 pointer-events-none">
               <Quote size={56} className="transform rotate-180" />
             </div>
 
@@ -88,17 +88,17 @@ export default function Testimonials() {
                     {reviews[activeIndex].name.substring(0, 2)}
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-white leading-none mb-1">
+                    <h4 className="text-sm font-bold text-white leading-none mb-1 font-cinzel tracking-wider">
                       {reviews[activeIndex].name}
                     </h4>
-                    <p className="text-xs text-zinc-500 font-medium">
+                    <p className="text-xs text-zinc-500 font-semibold uppercase tracking-widest mt-1">
                       {reviews[activeIndex].role}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] bg-zinc-900 border border-zinc-800 text-emerald-500 font-extrabold px-2 py-0.5 rounded uppercase tracking-wider">
+                  <span className="text-[10px] bg-zinc-900 border border-zinc-800 text-brand-primary font-extrabold px-2.5 py-1 rounded uppercase tracking-widest font-cinzel">
                     Verified Crew
                   </span>
                 </div>
@@ -110,14 +110,14 @@ export default function Testimonials() {
             <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex items-center gap-4">
               <button
                 onClick={handlePrev}
-                className="w-11 h-11 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-850 flex items-center justify-center transition-all shadow-xl active:scale-90"
+                className="w-11 h-11 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-850 flex items-center justify-center transition-all shadow-xl active:scale-90 cursor-pointer"
                 aria-label="Previous review"
               >
                 <ChevronLeft size={18} />
               </button>
               <button
                 onClick={handleNext}
-                className="w-11 h-11 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-850 flex items-center justify-center transition-all shadow-xl active:scale-90"
+                className="w-11 h-11 rounded-full bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-850 flex items-center justify-center transition-all shadow-xl active:scale-90 cursor-pointer"
                 aria-label="Next review"
               >
                 <ChevronRight size={18} />
@@ -132,7 +132,7 @@ export default function Testimonials() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
+                className={`h-1.5 rounded-full transition-all duration-300 ${
                   activeIndex === index ? 'w-8 bg-brand-primary' : 'w-2 bg-zinc-800'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
